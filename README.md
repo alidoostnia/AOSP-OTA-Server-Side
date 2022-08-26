@@ -1,6 +1,6 @@
-LineageOS Updater Backend
+OTA manager Backend (Server-Side Project)
 =======================
-Copyright (c) 2017 The LineageOS Project<br>
+This project belongs to the Lineage community and we are adapting it to the AOSP project.<br>
 
 Adding a new device
 ---
@@ -28,15 +28,15 @@ Development set up:
 Example API Calls:
 ---
 Obtaining rom list for a device:<br>
-`GET /api/v1/<device>/<romtype>/<incremental>?after=<utc_timestamp>&version=<14.1>` (incremental can be anything, it is currently unused)<br>
+`GET /api/v1/<device>/<romtype>/<incremental>?after=<utc_timestamp>&version=<11.1>` (incremental can be anything, it is currently unused)<br>
 `<device>` - Name of device. Example: `d2vzw`<br>
-`<romtype>` - Type of rom. Example: `nightly`<br>
+`<romtype>` - Type of rom. Example: `eng`<br>
 `<incremental>` - Caller device's incremental ID (ro.build.incr). Can be anything. <br>
 `<after>` - Timestamp for current build on device. (optional) <br>
-`<romversion>` - Version of rom. Example: `14.1`(optional)<br>
+`<romversion>` - Version of rom. Example: `11.1`(optional)<br>
 
 
-This project depends on a mirrorbits server (https://github.com/etix/mirrorbits) running our mirrorbits API (https://github.com/lineageos-infra/mirrorbits-api). Please see the README in that project for more information.
+This project depends on a mirrorbits server (https://github.com/etix/mirrorbits) running the mirrorbits API (https://github.com/lineageos-infra/mirrorbits-api). Please see the README in that project for more information.
 
 Don't want to run mirrorbits/mirrorbits-api?
 ---
