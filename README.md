@@ -1,6 +1,5 @@
 OTA manager Backend (Server-Side Project)
 =======================
-This project belongs to the Lineage community and we are adapting it to the AOSP project.<br>
 
 Adding a new device
 ---
